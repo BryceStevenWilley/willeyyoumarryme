@@ -6,21 +6,27 @@
    {% else %}
    <title>Bryce and Kathleen's Wedding</title>
    {% endif %}
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="static/css/app.css">
  </head>
  <body>
    <header class="marquee">
-     <h1>Bryce and Kathleen's Wedding Website!</h1>
      <nav>
-       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="/fun">Fun</a></li>
-        <li><a href="/faq">FAQ</a></li>
-        <li><a href="/rsvp">RSVP</a></li>
+       <ul class="slide-top">
+        <a href="/"><li class="bar-yellow">Home</li></a>
+        <a href="/fun"><li class="bar-pink">Fun</li></a>
+        <a href="/faq"><li class="bar-purple">FAQ</li></a>
+        <a href="/rsvp"><li class="bar-blue">RSVP</li></a>
+        <a href="/location"><li class="bar-green">Locations</li></a>
       </ul>
+      </nav>
    </header>
 
+   <div class="main-body">
+      <div class="website-title">Bryce and Kathleen's Wedding</div>
+
    {% block content %}{% endblock %}
+
+   </div>
 
  </body>
 </html>
