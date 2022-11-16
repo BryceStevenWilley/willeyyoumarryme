@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>RSVP for {{ user.first_name }} {{ user.last_name }}</h1>
+
+  <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+      {{ form.rsvp_wedding() }} {{ form.rsvp_wedding.label }}<br>
+    </p>
+    {% if group.invite_to_rehearsal_dinner %}
+    <p>
+      {{ form.rsvp_rehearsal() }} {{ form.rsvp_rehearsal.label }}<br>
+    </p>
+    {% endif %}
+    <p>
+      {{ form.covid_ack() }} {{ form.covid_ack.label }}<br>
+    </p>
+    <p>
+      {{ form.meal.label }}<br>
+      {{ form.meal(size=32) }}
+    </p>
+    <p>
+      {{ form.dietary_restrictions.label }}<br>
+      {{ form.dietary_restrictions(size=128) }}
+    </p>
+    <p>
+      If you want, you can give us your cell phone number,
+      and if anything unexpected happens with the plans, we'll
+      let you know ASAP!
+
+    <p>
+      {{ form.cell.label }}<br>
+      {{ form.cell(size=12) }}
+    </p>
+
+    <p>
+      Do you still live at {{ group.get_addr() }}? <br>
+      {{ form.address_correct() }}
+    </p>
+
+    <p>
+      {{ form.address.label }}: {{ form.address(size=30) }}<br>
+      {{ form.unit.label }}: {{ form.unit(size=30) }}<br>
+      {{ form.city.label }}: {{ form.city(size=30) }}<br>
+      {{ form.state.label }}: {{ form.state(size=30) }}<br>
+      {{ form.zip.label }}: {{ form.zip(size=10) }}
+    </p>
+
+    <p>
+      {{ form.general_note.label }}<br>
+      {{ form.general_note(size=128) }}
+    </p>
+
+    <p>
+      {{ form.submit() }}
+    </p>
+  </form>
+
+{% endblock %}

@@ -38,7 +38,7 @@ h1 {
 }
 
 /* https://codepen.io/nickcolley/pen/nJRJNw */
-ul {
+ul.slide-top {
   height: 2.500em;
   width: 100%;
   padding: 0;
@@ -48,7 +48,7 @@ ul {
   font-size: 16px;
 }
 
-li {
+.slide-top li {
   position: relative;
   display: block;
   float: left;
@@ -68,7 +68,7 @@ li {
   color: white;
 }
 
-li::before {
+.slide-top li::before {
   content: '';
   position: absolute;
   display: block; 
@@ -83,7 +83,7 @@ li::before {
   border-right-style: solid
 }
 
-li::after {
+.slide-top li::after {
   content: '';
   position: absolute;
   display: block;
@@ -106,28 +106,28 @@ li::after {
   color: #000;
 }
 
-li:hover::after {
+.slide-top li:hover::after {
   border-top-width: 2.5em;
   border-top-style: solid;
   border-right: 1.563em solid transparent;
 }
-li:hover::before {
+.slide-top li:hover::before {
   border-top: 2.5em solid transparent;
   border-right-width: 1.563em;
   border-right-style: solid;
 }
 
 /* Yellow */
-li.bar-yellow{
+.slide-top li.bar-yellow{
   background: var(--yellow);
 }
-li.bar-yellow::before {
+.slide-top li.bar-yellow::before {
   border-right-color: var(--yellow);
 }
-li.bar-yellow::after {
+.slide-top li.bar-yellow::after {
   border-top-color: var(--yellow);
 }
-li.bar-yellow:hover {
+.slide-top li.bar-yellow:hover {
   background: #DDD;
 }
 li.bar-yellow:hover::after {
@@ -213,57 +213,6 @@ li.bar-green:hover::after {
   border-top-color: #DDD;
 }
 
-/* Hover */
-
-/*
-li:hover::after {  
-  border-top: 2.5em solid #CCC;
-  border-right: 1.563em solid transparent;
-}
-li:hover::before {  
-  border-top: 2.5em solid transparent;
-  border-right: 1.563em solid #CCC;
-}
-*/
-
-/* Active */
-
-/*
-li:hover::after {
-  border-top-width: 2.5em;
-  border-top-style: solid;
-  border-right: 1.563em solid transparent;
-}
-li:hover::after.bar-blue {
-  border-top-color: var(--blue);
-}
-li:hover::after.bar-purple {
-  border-top-color: var(--purple);
-}
-li:hover::after.bar-green {
-  border-top-color: var(--green);
-}
-li:hover::after.bar-yellow {
-  border-top-color: var(--yellow);
-}
-li:hover::before {
-  border-top: 2.5em solid transparent;
-  border-right-width: 1.563em;
-  border-right-style: solid;
-}
-li:hover::before.bar-blue {
-  border-right-style: var(--blue);
-}
-li:hover::before.bar-purple {
-  border-right-style: var(--purple);
-}
-li:hover::before.bar-green {
-  border-right-style: var(--green);
-}
-li:hover::before.bar-yellow {
-  border-right-style: var(--yellow);
-}
-*/
 /*
 nav ul.slide-top {
   display: flex;

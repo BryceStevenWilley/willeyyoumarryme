@@ -1,6 +1,5 @@
 # TODO
 
-
 ## Overall site
 
 * [ ]: UX / navigation
@@ -15,7 +14,6 @@
 * [ ]: sketch out that page
 * [ ]: make the semantic HTML
 * [ ]: do CSS blocking
-
 
 * https://flask.palletsprojects.com/en/2.1.x/patterns/sqlite3/
 
@@ -64,12 +62,12 @@ Put it all in an [interactive map](https://www.mapbox.com/solutions/interactive-
 ## RSVP
 
 Type in you or your plus one's name
-* if already RSVP'd show selections and say to email if changed
+* [ ] if already RSVP'd show selections and say to email if changed
 * else show form with
-  * plus ones' info
-  * meal (dietary restrictions)
-  * general note
-* show personalized not when they finish ("It'll be good to see you again!")
+  * [ ] plus ones' info
+  * [x] meal (dietary restrictions)
+  * [x] general note
+* [ ] show personalized note when they finish ("It'll be good to see you again!")
 
 ## Domains
 willeyyoumarry.me

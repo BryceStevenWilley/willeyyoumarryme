@@ -12,17 +12,28 @@
    <header class="marquee">
      <nav>
        <ul class="slide-top">
-        <a href="/"><li class="bar-yellow">Home</li></a>
-        <a href="/fun"><li class="bar-pink">Fun</li></a>
-        <a href="/faq"><li class="bar-purple">FAQ</li></a>
-        <a href="/rsvp"><li class="bar-blue">RSVP</li></a>
-        <a href="/location"><li class="bar-green">Locations</li></a>
+        <a href="{{ url_for('index') }}"><li class="bar-yellow">Home</li></a>
+        <a href="{{ url_for('fun') }}"><li class="bar-pink">Fun</li></a>
+        <a href="{{ url_for('faq') }}"><li class="bar-purple">FAQ</li></a>
+        <a href="{{ url_for('rsvp') }}"><li class="bar-blue">RSVP</li></a>
+        <a href="{{ url_for('location') }}"><li class="bar-green">Locations</li></a>
       </ul>
       </nav>
    </header>
 
    <div class="main-body">
       <div class="website-title">Bryce and Kathleen's Wedding</div>
+
+   {% with messages = get_flashed_messages() %}
+   {% if messages %}
+   <ul>
+    {% for message in messages %}
+    <li>{{message}}</li>
+    {% endfor %}
+   </ul>
+   {% endif %}
+   {% endwith %}
+
 
    {% block content %}{% endblock %}
 
