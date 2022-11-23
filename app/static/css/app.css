@@ -22,8 +22,62 @@ body {
   margin: 0;
 }
 
+h1 {
+  border-top-color: black;
+  border-top-style: solid;
+  padding-top: 2rem;
+}
+
+.slide-top li.spacer {
+  width:30%;
+}
+
+@media (max-width: 930px) {
+  .slide-top li.spacer {
+    width: 5%;
+  }
+}
+
+.dir-slate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  border-top: 5px black solid;
+border-bottom: 5px black solid;
+}
+
+.front-image {
+  border-left: 5px black solid;
+padding: 1rem;
+border-right: 5px black solid;
+  flex-grow: 2;
+}
+
+.front-name {
+  font-family: 'Saint-George', sans-serif;
+
+}
+
+.slide-top li.spacer::before {
+  border: none;
+}
+
+.slide-top li.spacer::after {
+  border: none;
+}
+
 .main-body {
   margin: 8px;
+
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  text-align: justify;
 }
 
 h1 {
@@ -43,7 +97,7 @@ ul.slide-top {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: rgb(82, 42, 6);
+  background: black; /* rgb(82, 42, 6); an older brown */
   
   font-size: 16px;
 }

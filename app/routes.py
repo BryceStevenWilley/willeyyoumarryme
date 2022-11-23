@@ -8,7 +8,8 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-  return render_template('index.html', title='Main')
+  form = SearchForm()
+  return render_template('index.html', title='Main', form=form)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
