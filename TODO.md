@@ -24,7 +24,7 @@
 A countdown to the wedding day (11/11/2023)
 
 Go with a marquee for the nav bar, a bit shorter and fatter than normal:
-* should use CSS drawing: 
+* should use CSS drawing:
   * [an intro to CSS drawing](https://redstapler.co/css-drawing-tutorial-for-beginners/)
   * https://www.miriamsuzanne.com/2020/12/08/css-art/
   * https://uxdesign.cc/creating-accessible-css-art-5366302590a9
