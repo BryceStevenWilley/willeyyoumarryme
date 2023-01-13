@@ -2,35 +2,44 @@
 
 {% block content %}
 
+  <h1>
+  Kathleen <span class="curly-font">and</span> Bryce
+  </h1>
+
     <div class="dir-slate">
-      <div class="name1 front-name">Kathleen</div>
-      <div class="front-image">
-        <img src="/static/img/3R3A0277_websize.jpg" alt="An image of Kathleen and Bryce in the Boston common, walking up stairs away from the camera but looking back towards it."
-          width="200">
-      </div>
-      <div class="name2 front-name">Bryce</div>
+        <img class="main-image" src="/static/img/savethedatepic.jpg" alt="An image of Kathleen and Bryce in an embrace in the Boston common, next to a gazebo covered in snow"
+          width="400">
     </div>
 
+<p class="block-font centered">November 11th, 2023</p>
 
-<p>In progress</p>
+<p class="block-font centered"><a href="https://goo.gl/maps/giisdkmT2QTGYYym6">Olio</a></p>
+<p class="block-font centered">43 Main St,</p>
+<p class="block-font centered">Peabody, Massachusetts</p>
 
-<p>Our wedding is going to be in Peabody, Massachusetts, at Olio.</p>
+<h2 id="hotels">Places to stay</h2>
 
-<h1 id="location">Locations of Interest</h1>
+<ul>
+  <a href="https://www.marriott.com/en-us/hotels/bospb-boston-marriott-peabody/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"><li>Boston Marriott Peabody</li></a>
+  <a href="https://www.thehotelsalem.com/"><li>The Hotel Salem</li></a>
+  <a href="https://www.hilton.com/en/hotels/bossahx-hampton-inn-salem-boston/"><li>Hampton Inn Salem Boston</li></a>
+</ul>
 
-<h2>Q: Where is the wedding going to be?</h2>
+<h2 id="location">Locations of Interest</h2>
+
+<h3>Q: Where is the wedding going to be?</h3>
 
 <p>A: In Peabody, Massachusetts! It's a town about 30 minutes north of Boston,
   and only a few minutes away from nearby Salem, a very popular Fall destination.
 </p>
 
-<h2>Q: How can I get to Peabody?</h2>
+<h3>Q: How can I get to Peabody?</h3>
 
 <p>To get to Massachusetts, you can fly into Logan airport (BOS).
   From there, take route 1 north, or take 93 north until it hits 95, then go east.
 </p>
 
-<h2>Q: What can I do in Peabody?</h2>
+<h3>Q: What can I do in Peabody?</h3>
 
 <p>A lot! There's a whole downtown street, with a library, a several restaurants.
 </p>
@@ -43,22 +52,18 @@
   You are also a quick train ride to downtown Boston!
 </p>
 
-<h1 id="registry">Registry</h1>
+<h2 id="registry">Registry</h2>
 
-Information coming soon!
+<p>You are <b>not expected</b> to get anything off the registry; we are more than happy to
+see you at the wedding.</p>
 
-<h1 id="faq">FAQ</h1>
+<p>Information coming soon!</p>
 
-<h2>Q: I'm having problems submitting my RSVP!</h2>
+<h2 id="rsvp">RSVP</h2>
 
-<p>
-  No worries! Email Bryce (bryce.steven.willey@gmail.com) or Kathleen (kathleen.carroll.97@gmail.com)
-  and we'll help you sort it out!
-</p>
+<p>Check back soon for RSVP!</p>
 
-<h1 id="rsvp">RSVP</h1>
-
-<p>First, find your name on our list</p>
+<!--p>First, find your name on our list</p>
 
   <form action="rsvp" method="post" novalidate>
   {{ form.hidden_tag() }}
@@ -72,5 +77,14 @@ Information coming soon!
 
   <p>{{ form.submit() }}</p>
   </form>
+<h2 id="faq">FAQ</h1>
+
+<h2>Q: I'm having problems submitting my RSVP!</h2>
+
+<p>
+  No worries! Email Bryce (bryce.steven.willey@gmail.com) or Kathleen (kathleen.carroll.97@gmail.com)
+  and we'll help you sort it out!
+</p-->
+
 
 {% endblock %}
